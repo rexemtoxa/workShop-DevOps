@@ -1,0 +1,22 @@
+
+env:
+  browser: true
+  es6: true
+parser: babel-eslint
+extends: 
+  - 'airbnb-base'
+parserOptions:
+  ecmaVersion: 2018
+  sourceType: module
+plugins:
+  - import
+  - babel
+rules:
+  react/prop-types: off
+settings:
+  react:
+    version: 16.8.3
+  import/resolver:
+    node:
+      extensions:
+        - .js
